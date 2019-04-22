@@ -1,0 +1,10 @@
+[Unit]
+Description=Robo Weather Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/robo-weather.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
